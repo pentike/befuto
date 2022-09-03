@@ -1,0 +1,44 @@
+#output, #canvas {
+    display: none;
+}
+
+.camera {
+    position: sticky;
+    top: 20px;
+    padding: 30px;
+    background-color: darkgrey;
+}
+
+video {
+
+    border: 10px solid white;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+    
+}
+
+.flash {
+    border: 10px solid  rgb(51, 120, 151);
+}
+
+
+
+#kozeledik-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+li {
+    padding: 10px;
+}
+input {
+    height: 50px;
+    width: 200px;
+}
+span, input {
+    display: table-cell;
+}
+
+
+
