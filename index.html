@@ -9,29 +9,32 @@
 </head>
 
 <body>
-    
-        <div id="kozeledik-container">
-            <div class="camera">
-                <video id="video">Video stream not available.</video>
-                <!--button id="startbutton">Take photo</button-->
-            </div>
-            <h2>Közeledik</h2>
-            <ol id="kozeledik"></ol>
-        </div>
-        
-        <div id="versenyzok-container">
+    <div id="top"></div>
+    <div class="camera">
+        <video id="video">Video stream not available.</video>
+        <!--button id="startbutton">Take photo</button-->
+    </div>
+
+    <div id="left-col">
+    <div id="versenyzok-container">
         <h2>Versenyzők</h2>
         <input id="kereso" type="text" />
         <input id="kereso-torles" type="button" value="Összes"/>
         <ol id="versenyzok"></ol>
-        </div>
-
+    </div>
+    
     <div id="befutott-container">
         <h2>Befutott</h2>
         <ol id="befutottak"></ol>
     </div>
-
-
+</div>
+    
+<div id="right-col">
+    <div id="kozeledik-container">
+        <h2>Közeledik</h2>
+        <ol id="kozeledik"></ol>
+    </div>
+</div>
 
 
     <canvas id="canvas">
@@ -41,6 +44,7 @@
     </div>
 
 
+    <a id="toplink" href="#top">&uarr; Top</a>
 
     <template id="versenyzoSablon"><li><span class="nev"></span><input class="kozeledik-button" type="button" value="Közeledik" />
         </li>
@@ -48,7 +52,7 @@
     <template id="kozeledoSablon"><li><span class="nev"></span><input class="befuto-button" type="button" value="Befutó" />
         </li>
     </template>
-    <template id="befutottSablon"><li><span class="nev"></span> 🕑<span class="ido"></span><img class="foto" src=""/>
+    <template id="befutottSablon"><li><span class="nev"></span><span>&nbsp;🕑</span><span class="ido"></span><img class="foto" src=""/>
         </li>
     </template>
 

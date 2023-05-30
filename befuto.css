@@ -3,10 +3,12 @@
 }
 
 .camera {
-    position: sticky;
+    position: fixed;
     top: 20px;
+    right: 20px;
     padding: 30px;
     background-color: darkgrey;
+    z-index: 10;
 }
 
 video {
@@ -21,11 +23,19 @@ video {
     border: 10px solid  rgb(51, 120, 151);
 }
 
+body {
+    background-color: rgb(243, 243, 243);
+    color: rgb(70, 112, 15);
+    font-size: large;
+}
 
-
+#right-col {
+    float: right;
+    padding-top: 500px;
+}
 #kozeledik-container {
     position: absolute;
-    top: 20px;
+    top: 530px;
     right: 20px;
 }
 
@@ -38,6 +48,17 @@ input {
 }
 span, input {
     display: table-cell;
+}
+
+#toplink {
+    position: fixed;
+    bottom:0;
+    right: 0;
+    background-color: lightgreen;
+    width: 100px;
+    height: 70px;
+    font: xx-large bold;
+    text-align: center;
 }
 
 
